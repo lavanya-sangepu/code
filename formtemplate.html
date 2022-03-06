@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Template</title>
+    <script src="https://kit.fontawesome.com/5058c287a5.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            display: flex;
+            flex-direction: row;
+        }
+        .body1{
+            width: 50vw;
+            margin: auto;
+            background-image: url(https://th.bing.com/th/id/R.2a761787715ca71788aad1a28ab057ac?rik=yREJ2nAK9Ib9yg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f09%2fAll-White-Background-for-Desktop.jpg&ehk=faNX%2bOZ5%2bUeETjecR18frqYPLdGhJSkGcgcDgj4j%2fVk%3d&risl=&pid=ImgRaw&r=0);
+            background-size: cover;
+        }
+        .body2{
+            width: 50vw;
+            background-image: url(https://www.usnews.com/dims4/USNEWS/79bc039/2147483647/thumbnail/640x420/quality/85/?url=http%3A%2F%2Fmedia.beam.usnews.com%2Fbe%2Fdd%2F8f25b4174b6398285139452fb7d5%2F190313-collegeapplication-stock.jpg);
+            background-size: cover;
+            background-position: center center;
+        }
+        .reg{
+            background-color: rgba(10, 241, 241, 0.4);
+            margin: 50px;
+            padding: 20px 100px;
+        }
+        h2{
+            display: block;
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            padding: 20px;
+
+        }
+        .fa-solid{
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        .pa10wi100{
+            padding: 10px;
+            width: 100%;
+        }
+        .check{
+            padding: 20px;
+            font-size: 1.2em;
+        }
+        .radiocheck{
+            width: 18px;
+            height: 18px;
+        }
+        .ml{
+            margin-left: 20px;
+        }
+        .col{
+            font-size: 1.2em;
+            background-color: rgb(243, 243, 3);
+            color: #000;
+        }
+        .pa20{
+            padding: 20px;
+        }
+        .cur :hover{
+            cursor: pointer;
+        }        
+        .signin{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="body1">
+            <div class="reg">
+                <h2>Registration</h2>
+                <div class="container">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="Userrname" id="Username" class="typetext pa10wi100" placeholder="Username" autocomplete="off" required>
+                </div>
+                <div class="container">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" name="email" class="email pa10wi100" placeholder="Email" required>
+                </div>
+                <div class="container">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="number" name="number" class="pa10wi100" placeholder="Mobile Number" required>
+                </div>
+                <div class="container">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="text" name="password" class="pa10wi100" placeholder="password" required>
+                </div>
+                <div class="container">
+                    <input type="radio" name="radio" class="radiocheck" required>Male
+                    <input type="radio" name="radio" class="radiocheck ml" required>Female
+                </div>
+                <div class="pa20">
+                    <select name="selectt" id="select" class="pa10wi100">
+                        --choose one--
+                        <option value="1">select city</option>
+                        <option value="2">Hyderabad</option>
+                        <option value="3">Warangal</option>
+                        <option value="4">Karimnagar</option>
+                    </select>
+                </div>
+                <div class="check">
+                    <input type="checkbox" name="check" class="radiocheck" value="I agree" required>I agree to the terms and conditions
+                </div>
+                <div class="container cur">
+                    <input type="submit" name="submit" class="pa10wi100 col" value="Register">
+                </div>
+                <div class="signin">
+                    <p>Already Registered? <a href="#">sign in</a></p>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="body2">
+            <!-- <img src="https://thumbs.dreamstime.com/b/e-learning-concept-online-education-login-registration-screen-e-learning-concept-online-education-login-registration-screen-207830679.jpg" alt="Image"> -->
+        </div>
+    </main>
+</body>
+</html>
