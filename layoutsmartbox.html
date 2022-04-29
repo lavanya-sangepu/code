@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smartbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .tac {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .black {
+            color: black;
+        }
+
+        .white {
+            color: white;
+        }
+
+        header {
+            background-color: aquamarine;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+            padding: 20px;
+        }
+
+        #bgimg {
+            background-image: url(./SEO/imagess/background.jfif);
+            height: 300px;
+            width: auto;
+            /* background-size: contain; */
+            background-size: cover;
+            text-align: center;
+            /* background-repeat: no-repeat;  */
+            /* padding: 80px 500px; */
+        }
+
+        #bgimg h2 {
+            padding-top: 50px;
+        }
+
+        #what ul {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+        }
+
+        #what ul li {
+            width: 20vw;
+            height: 20vh;
+            list-style: none;
+        }
+        .monitorflex{
+            display: flex;
+            height: 40vh;/* justify-content: space-between; */
+        }
+        .width50{
+            width: 50vw;
+            height: 40vh;
+        }
+        ul li{
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="b&w">
+                <h2>SMARTBOX</h2>
+            </div>
+            <ul>
+                <li>HOME</li>
+                <li>PAGES</li>
+                <li>FEATURES</li>
+                <li>BLOG</li>
+                <li>PORTFOLIO</li>
+                <li>CONTACT</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div id="bgimg" class="b&w">
+                <h2>BOLD&BEAUTIFUL</h2>
+            </div>
+        </section>
+        <section id="what">
+            <div class="b&w tac">
+                <h2>WHAT WE DO?</h2>
+            </div>
+            <ul>
+                <li>
+                    <h4>WEB APPLICATIONS</h4>
+                </li>
+                <li>
+                    <h4>CLOUD HOSTIMG</h4>
+                </li>
+                <li>
+                    <h4>SOCIAL APPS</h4>
+                </li>
+                <li>
+                    <h4>SMART DESIGN</h4>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <div class="b&w tac">
+                <h2>RECENT WORK</h2>
+            </div>
+            <div class="monitorflex">
+                <div class="width50"><img src="https://c.wallhere.com/photos/1b/75/monitor_mac_apple_computer-642160.jpg!d" class="width50" alt="monitor"></div>
+                <div class="width50">
+                    <ul>
+                        <li>
+                            <h5>SOCIAL APPS DEVELOPMENT</h5>
+                        </li>
+                        <li>
+                            <h5>APPS THAT YOUR CLIENTS ARE GOING TO LOVE</h5>
+                        </li>
+                        <li>
+                            <h5>INNOVATIONSS THAT TAKES YOU TO THE NEXT LEVEL</h5>
+                        </li>
+                        <li>
+                            <h5>ENVIRONMENTAL FRIENDLY DESIGN</h5>
+                        </li>
+                        <li>
+                            <h5>DESIGN THAT HAS SOME MAGIC IN IT</h5>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="latest">
+            <div class="b&w tac">
+                <h2>LATEST NEWS</h2>
+            </div>
+            <ul>
+                <li>
+                    <h5>A NORMAL POST</h5>
+                </li>
+                <li>
+                    <h5>LINK POST</h5>
+                </li>
+                <li>
+                    <h5>VIDEO POST</h5>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <div class="b&w tac">
+                <h2>CLIENTS WE LOVE</h2>
+            </div>
+            <ul>
+                <li>logo1</li>
+                <li>logo2</li>
+                <li>logo3</li>
+                <li>logo4</li>
+                <li>logo5</li>
+            </ul>
+            
+        </section>
+        <footer>
+            <div>
+                smartbox addredss
+            </div>
+            <div>
+                <ul>
+                    <li>logo1</li>
+                    <li>logo2</li>
+                    <li>logo3</li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+
+</body>
+
+</html>
